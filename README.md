@@ -1,6 +1,6 @@
 # Introduction
 
-<img src="/art/nem-steam-store.gif?raw=true" width="200px">
+<img src="/art/nem-steam-store.gif?raw=true" width="800px">
 
 This just a POC project for Online game store. Steam game store concept build on NEM blockchain, which mean user allow to using web applicaiton to purchase game (activation code) from the store.
 
