@@ -1,5 +1,7 @@
 # Introduction
 
+<img src="/art/nem-steam-store.gif?raw=true" width="200px">
+
 This just a POC project for Online game store. Steam game store concept build on NEM blockchain, which mean user allow to using web applicaiton to purchase game (activation code) from the store.
 
 NEM has powerful messaging feature, by using messaging feature, it allow user to purchase a game and received actication code from message in NEM blockchain.
