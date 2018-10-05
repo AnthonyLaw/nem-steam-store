@@ -62,10 +62,12 @@ class App extends Component {
       })
       .subscribe(allTransactions => {
         const orderList = allTransactions.filter(transaction => {
-          return (
-            transaction.recipient.value ===
-            process.env.REACT_APP_STEAMSTORE_ADDRESS
-          );
+          return orderList;
+          // console.log('go: ' + JSON.stringify(transaction));
+          // return (
+          //   transaction.recipient.value ===
+          //   process.env.REACT_APP_STEAMSTORE_ADDRESS
+          // );
         });
 
         const invoiceList = allTransactions.filter(transaction => {
@@ -84,7 +86,7 @@ class App extends Component {
     accountHttp
       .unconfirmedTransactions(new Address(process.env.REACT_APP_ADDRESS))
       .subscribe(x => {
-        console.log(x);
+        // console.log(x);
         this.setState({
           unconfirmedTransactionsList: x,
         });
@@ -94,7 +96,7 @@ class App extends Component {
   decryptMessage = payload => {
     let decryptMessage = nem.crypto.helpers.decode(
       process.env.REACT_APP_PRIVATE_KEY,
-      process.env.REACT_APP_STEAMSTORE_PK,
+      process.env.REACT_APP_STEAMSTORE_PUBLIC_KEY,
       payload
     );
 
