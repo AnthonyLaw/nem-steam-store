@@ -26,28 +26,20 @@ Tx example: [Invoice for the game (encrypted)](http://bob.nem.ninja:8765/#/trans
 
 1.  `git clone https://github.com/AnthonyLaw/nem-steam-store`.
 2.  `cd nem-steam-store`.
-3.  create `.env` file in root.
-    ```
-    REACT_APP_PRIVATE_KEY= address private key
-    REACT_APP_ADDRESS= your address
-    REACT_APP_STEAMSTORE_ADDRESS= store address from server
-    REACT_APP_STEAMSTORE_PK= store public key from server
-    ```
-4.  `npm install`
-5.  `npm start`
-6.  Open [http://localhost:3000](http://localhost:3000/) to view it in the browser.
+3.  `cp .env-sample .env`
+4.  Configure all required variables in .env
+5.  `npm install`
+6.  `npm start`
+7.  Open [http://localhost:3000](http://localhost:3000/) to view it in the browser.
 
 ## Setup NEM-Steam-Store-Server (nodejs)
 
 1.  `git clone https://github.com/AnthonyLaw/nem-steam-store-server`.
 2.  `cd nem-steam-store-server`.
-3.  create `.env` file in root.
-    ```
-    NEM_PRIVATE_KEY= store private key
-    NEM_ADDRESS= store address
-    ```
-4.  `npm install`
-5.  `npm start`
+3.  `cp .env-sample .env`
+4.  Configure all required variables in .env
+5.  `npm install`
+6.  `npm start`
 
 ## Summary
 
